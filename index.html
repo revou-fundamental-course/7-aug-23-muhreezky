@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Muhammad Rizkiansyah" />
+  <title>Hitung Luas dan Keliling Segitiga</title>
+</head>
+<body>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <header>
+    <h1>Aplikasi Segitiga</h1>
+  </header>
+  <main>
+    <div class="hitung-luas">
+      <h2 class="titlebar">Hitung Luas</h2>
+      <div>
+        <b>Rumus : </b> (alas &times; tinggi) / 2
+      </div>
+      <form id="hitungLuas" class="px py flex gapped flex-col">
+        <div class="text-left inp">
+          <label for="alas">Alas : </label>
+          <input name="alas" id="alas" type="number" placeholder="Masukkan Panjang Alas..." />
+        </div>
+        <div class="text-left inp">
+          <label for="tinggi">Tinggi : </label>
+          <input name="tinggi" id="tinggi" type="number" placeholder="Masukkan Tinggi Segitiga..." />
+        </div>
+        <button type="submit" class="btn my">
+          Hitung !
+        </button>
+      </form>
+      <div>
+        <b>Luas = </b>
+        <span id="hasilLuas">0</span>
+      </div>
+    </div>
+    <div class="hitung-keliling">
+      <h2 class="titlebar">Hitung Keliling</h2>
+      <form id="hitungKeliling" class="px py flex gapped flex-col">
+        <div class="text-left inp">
+          <label for="sisi1">Sisi 1 :</label>
+          <input name="sisi1" id="sisi1" type="number" placeholder="Masukkan Sisi 1" />
+        </div>
+        <div class="text-left inp">
+          <label for="sisi2">Sisi 2 :</label>
+          <input name="sisi2" id="sisi2" type="number" placeholder="Masukkan Sisi 2" />
+        </div>
+        <div class="text-left inp">
+          <label for="sisi3">Sisi 3 :</label>
+          <input name="sisi3" id="sisi3" type="number" placeholder="Masukkan Sisi 3" />
+        </div>
+        <button type="submit" class="btn my">
+          Hitung !
+        </button>
+      </form>
+    </div>
+  </main>
+  <script>
+    document.getElementById("hitungLuas").addEventListener("submit", function (e) {
+      handleLuas(e, "");
+    });
+  </script>
+</body>
+</html>

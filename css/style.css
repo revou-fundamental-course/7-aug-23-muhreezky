@@ -1,0 +1,126 @@
+.btn {
+  background-color: #0981c7;
+  color: #ece8dc;
+  border-color: rgb(50, 75, 50);
+  border-radius: 10px;
+}
+
+.btn:active {
+  opacity: 45%;
+}
+
+.px {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pb {
+  padding-bottom: 10px;
+}
+
+.py {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+}
+
+input, button {
+  padding: 5px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-items: center;
+  background-color: rgb(240, 240, 22);
+  margin-bottom: 20px;
+}
+
+.titlebar {
+  background-color: rgb(240, 240, 22);
+  margin-bottom:20px;
+  padding: 7px;
+}
+
+.inp {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.w-full {
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.text-left {
+  text-align: left;
+}
+
+main {
+  border: 1.5px #0e0e0e solid;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.mb {
+  margin-bottom: 5px;
+}
+
+.mt {
+  margin-top: 5px;
+}
+
+.mx {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.my {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gapped {
+  gap: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  button, input {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  button, input {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  button, input {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  button, input {
+    font-size: 22px;
+  }
+}
