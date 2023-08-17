@@ -16,3 +16,12 @@ function handleLuas (e, targetId) {
   const tinggi = Number(frm.get("tinggi"));
   t.innerHTML = hitungLuas(alas, tinggi);
 }
+
+function handleKeliling (e, targetId) {
+  e.preventDefault();
+  const t = document.getElementById(targetId);
+  const sisi = [];
+  const frm = new FormData(e.target);
+  frm.forEach((e) => sisi.push(Number(e)));
+  t.innerHTML = hitungKeliling(...sisi);
+}

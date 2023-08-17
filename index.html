@@ -31,7 +31,7 @@
           Hitung !
         </button>
       </form>
-      <div>
+      <div class="hasil mx">
         <b>Luas = </b>
         <span id="hasilLuas">0</span>
       </div>
@@ -55,12 +55,30 @@
           Hitung !
         </button>
       </form>
+      <div class="hasil mx">
+        <b> Keliling = </b>
+        <span id="hasilKeliling">0</span>
+      </div>
     </div>
   </main>
   <script>
     document.getElementById("hitungLuas").addEventListener("submit", function (e) {
-      handleLuas(e, "");
+      handleLuas(e, "hasilLuas");
+    });
+    document.getElementById("hitungKeliling").addEventListener("submit", function (e) {
+      handleKeliling(e, "hasilKeliling");
     });
   </script>
+  <footer>
+    <div>
+      &copy; 2023 Muhammad Rizkiansyah
+    </div>
+    <div>
+      Website : 
+      <a class="text-white" href="https://muhreezky.vercel.app">
+        muhreeezky.vercel.app
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
